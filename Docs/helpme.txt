@@ -1,0 +1,12 @@
+
+
+usage: skelly name [template] [options]
+
+  template:
+    Visit our Github page to view full list of Templates
+    Defaults to .txt
+
+  options:
+    -d, --destination [path]                 Specify an alternate destination
+    -b                                       Generate a blank template file
+    -m [number]                              Multiple copies of template file

@@ -1,0 +1,7 @@
+cpp : cpp_template.cpp
+css : css_template.css
+go : go_template.go
+html : html_template.html
+java : java_template.java
+readme : readme_template.md
+npmpkg : package_template.json

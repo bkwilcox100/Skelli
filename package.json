@@ -1,0 +1,16 @@
+{
+  "name": "skelly",
+  "version": "1.0.0",
+  "description": "A tool for creating templated files",
+  "main": "skelly.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main.js"
+  },
+  "author": "Brandon Wilcox",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "underscore": "^1.8.3"
+  }
+}
