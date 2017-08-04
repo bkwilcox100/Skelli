@@ -1,7 +1,8 @@
 const fs = require('fs');
+const path = require('path');
 
 exports.create = function() {
-  var data = fs.readFileSync('./Docs/template_codes.txt', 'utf8');
+  var data = fs.readFileSync(path.join(__dirname, '../Docs/template_codes.txt'), 'utf8');
   var templates = new Map();
   var parsedData = data.split('\n');
 
