@@ -9,7 +9,7 @@ A simple tool for quickly creating files
 ## Usage
 
 #### Basic Format
-    skelli [format] [name] [options...]
+    skelli [command] [name] [options...]
 
 #### Creating a Text File
     skelli txt hello        
@@ -17,6 +17,7 @@ A simple tool for quickly creating files
 
     skelli txt hello -m 4   
     // Outputs 4 txt files (hello0.txt, hello1.txt...)
+    // Up to 100 at a time
 
 ## Templates Supported
 + HTML
@@ -27,6 +28,16 @@ A simple tool for quickly creating files
 + NPM Package
 + ReadMe Markdown File
 + Python
+
+## Template Commands
++ html
++ css
++ java
++ cpp
++ go
++ npmpkg
++ readme
++ python
 
 ## Contributing
 

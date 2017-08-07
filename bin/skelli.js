@@ -42,23 +42,27 @@ if (_.contains(argv['_'], 'help')) {
   });
 } else if (argv['m']){
   var multiple = Number(argv['m']);
-  for (i = 0; i < multiple; i++){
-    // Get file name of requested template
-    var value = templates.get(argv['_'][0]);
+  if (multiple =< 100){
+    for (i = 0; i < multiple; i++){
+      // Get file name of requested template
+      var value = templates.get(argv['_'][0]);
 
-    // Get location of template file
-    var fileName = path.join(__dirname, '..', 'Templates', value);
+      // Get location of template file
+      var fileName = path.join(__dirname, '..', 'Templates', value);
 
-    var template = fs.readFileSync(fileName, 'utf8');
+      var template = fs.readFileSync(fileName, 'utf8');
 
-    // Slice extension from template
-    var extension = value.slice(value.indexOf('.'), value.length);
+      // Slice extension from template
+      var extension = value.slice(value.indexOf('.'), value.length);
 
-    fs.writeFile(path.join(process.cwd(), argv['_'][1] + i + extension), template, function(err) {
-      if (err) {
-        throw (err);
-      }
-    });
+      fs.writeFile(path.join(process.cwd(), argv['_'][1] + i + extension), template, function(err) {
+        if (err) {
+          throw (err);
+        }
+      });
+    }
+  } else {
+    console.log("Too many files. Only 100 or less at a time");
   }
 } else {
   console.log("Unknown Command. run 'skelli help' for help");

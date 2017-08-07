@@ -5,4 +5,5 @@ html : html_template.html
 java : java_template.java
 readme : readme_template.md
 npmpkg : package_template.json
+pyton : python_template.py
 txt : text_template.txt
