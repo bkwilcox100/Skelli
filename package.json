@@ -1,6 +1,6 @@
 {
   "name": "skelli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for creating templated files",
   "main": "skelli.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "underscore": "^1.8.3"
   },
   "repository": {
-    "type" : "git"
-  , "url" : "https://github.com/bkwilcox100/Skelli.git"
+    "type": "git",
+    "url": "https://github.com/bkwilcox100/Skelli.git"
   }
 }
