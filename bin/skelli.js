@@ -3,7 +3,7 @@
 const fs = require('fs');
 const _ = require('underscore');
 const path = require('path');
-const createTempMap = require('../Functions/createTemplateMap.js').create;
+const createTempMap = require('../functions/createTemplateMap.js').create;
 
 // Get Command Line Arguments
 var argv = require('minimist')(process.argv.slice(2));
@@ -14,7 +14,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var templates = createTempMap();
 
 if (_.contains(argv['_'], 'help')) {
-  fs.readFile(path.join(__dirname, '../Docs/helpme.txt'), 'utf8', function(err, data) {
+  fs.readFile(path.join(__dirname, '../docs/helpme.txt'), 'utf8', function(err, data) {
     if (err) {
       throw (err);
     }
@@ -25,7 +25,7 @@ if (_.contains(argv['_'], 'help')) {
   var value = templates.get(argv['_'][0]);
 
   // Get location of template file
-  var fileName = path.join(__dirname, '..', 'Templates', value);
+  var fileName = path.join(__dirname, '..', 'templates', value);
 
   fs.readFile(fileName, 'utf8', function(err, data) {
     if (err) {
@@ -48,7 +48,7 @@ if (_.contains(argv['_'], 'help')) {
       var value = templates.get(argv['_'][0]);
 
       // Get location of template file
-      var fileName = path.join(__dirname, '..', 'Templates', value);
+      var fileName = path.join(__dirname, '..', 'templates', value);
 
       var template = fs.readFileSync(fileName, 'utf8');
 

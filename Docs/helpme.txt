@@ -3,7 +3,7 @@
 usage: skelli [command] [name] [options...]
 
   command:
-    Visit our Github page to view full list of Templates
+    Visit our Github page to view full list of templates
     Most Common:
     txt - Plain Text
     html - HTML file

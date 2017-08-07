@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Docs/logo.png" width="200" />
+  <img src="./docs/logo.png" width="200" />
 </p>
 
 # Skelli (BETA)
