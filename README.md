@@ -12,8 +12,11 @@ A simple tool for quickly creating files
     skelli [format] [name] [options...]
 
 #### Creating a Text File
-    skelli txt hello
+    skelli txt hello        
+    // Outputs a single text file
 
+    skelli txt hello -m 4   
+    // Outputs 4 txt files (hello0.txt, hello1.txt...)
 
 ## Templates Supported
 + HTML

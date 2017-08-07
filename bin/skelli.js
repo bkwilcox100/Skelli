@@ -9,7 +9,7 @@ const createTempMap = require('../Functions/createTemplateMap.js').create;
 var argv = require('minimist')(process.argv.slice(2));
 
 // Test Arguments
-//console.log(argv);
+console.log(argv);
 
 var templates = createTempMap();
 
@@ -20,7 +20,7 @@ if (_.contains(argv['_'], 'help')) {
     }
     console.log(data);
   });
-} else if (templates.has(argv['_'][0]) && argv['_'][1]) {
+} else if (templates.has(argv['_'][0]) && argv['_'][1] && !(argv['m'])) {
   // Get file name of requested template
   var value = templates.get(argv['_'][0]);
 
@@ -40,6 +40,26 @@ if (_.contains(argv['_'], 'help')) {
       }
     });
   });
+} else if (argv['m']){
+  var multiple = Number(argv['m']);
+  for (i = 0; i < multiple; i++){
+    // Get file name of requested template
+    var value = templates.get(argv['_'][0]);
+
+    // Get location of template file
+    var fileName = path.join(__dirname, '..', 'Templates', value);
+
+    var template = fs.readFileSync(fileName, 'utf8');
+
+    // Slice extension from template
+    var extension = value.slice(value.indexOf('.'), value.length);
+
+    fs.writeFile(path.join(process.cwd(), argv['_'][1] + i + extension), template, function(err) {
+      if (err) {
+        throw (err);
+      }
+    });
+  }
 } else {
   console.log("Unknown Command. run 'skelli help' for help");
 }
