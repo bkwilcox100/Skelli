@@ -1,4 +1,4 @@
-# Skelly
+# Skelli
 A simple tool for quickly creating files
 
 ## Installation
@@ -13,7 +13,7 @@ A simple tool for quickly creating files
 
 #### Creating a Text File
     skelly txt hello
-    
+
 
 ## Templates Supported
 + HTML
@@ -23,6 +23,7 @@ A simple tool for quickly creating files
 + Go
 + NPM Package
 + ReadMe Markdown File
++ Python
 
 ## Contributing
 
@@ -32,14 +33,6 @@ A simple tool for quickly creating files
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
 
 ## License
-
-TODO: Write license
+MIT
