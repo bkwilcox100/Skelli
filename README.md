@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./Docs/logo.png" width="200" />
+</p>
+
 # Skelli (BETA)
 A simple tool for quickly creating files
 
