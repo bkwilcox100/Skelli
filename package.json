@@ -1,6 +1,6 @@
 {
   "name": "skelli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A tool for creating templated files",
   "main": "skelli.js",
   "scripts": {
