@@ -1,4 +1,4 @@
-# Skelli
+# Skelli (BETA)
 A simple tool for quickly creating files
 
 ## Installation
