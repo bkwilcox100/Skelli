@@ -47,6 +47,5 @@ A simple tool for quickly creating files
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-
 ## License
 MIT

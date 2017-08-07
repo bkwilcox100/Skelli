@@ -7,3 +7,4 @@ readme : readme_template.md
 npmpkg : package_template.json
 pyton : python_template.py
 txt : text_template.txt
+rtf : rtf_template.rtf

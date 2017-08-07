@@ -9,7 +9,7 @@ const createTempMap = require('../Functions/createTemplateMap.js').create;
 var argv = require('minimist')(process.argv.slice(2));
 
 // Test Arguments
-console.log(argv);
+//console.log(argv);
 
 var templates = createTempMap();
 
@@ -42,7 +42,7 @@ if (_.contains(argv['_'], 'help')) {
   });
 } else if (argv['m']){
   var multiple = Number(argv['m']);
-  if (multiple =< 100){
+  if (multiple <= 100){
     for (i = 0; i < multiple; i++){
       // Get file name of requested template
       var value = templates.get(argv['_'][0]);
