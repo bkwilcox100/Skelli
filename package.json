@@ -2,13 +2,13 @@
   "name": "skelli",
   "version": "1.0.0",
   "description": "A tool for creating templated files",
-  "main": "skelly.js",
+  "main": "skelli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/skelly.js"
+    "start": "node ./bin/skelli.js"
   },
   "bin": {
-    "skelly": "bin/skelly.js"
+    "skelli": "bin/skelli.js"
   },
   "author": "Brandon Wilcox",
   "license": "ISC",

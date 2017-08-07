@@ -1,6 +1,6 @@
 
 
-usage: skelly name [template] [options]
+usage: skelli name [template] [options]
 
   template:
     Visit our Github page to view full list of Templates

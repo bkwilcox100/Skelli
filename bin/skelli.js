@@ -41,5 +41,5 @@ if (_.contains(argv['_'], 'help')) {
     });
   });
 } else {
-  console.log("Unknown Command. run 'skelly help' for help");
+  console.log("Unknown Command. run 'skelli help' for help");
 }

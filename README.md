@@ -4,15 +4,15 @@ A simple tool for quickly creating files
 ## Installation
 
 #### NPM
-    npm skelly -g
+    npm skelli -g
 
 ## Usage
 
 #### Basic Format
-    skelly [format] [name] [options...]
+    skelli [format] [name] [options...]
 
 #### Creating a Text File
-    skelly txt hello
+    skelli txt hello
 
 
 ## Templates Supported
