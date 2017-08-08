@@ -2,8 +2,8 @@
   <img src="./docs/logo.png" width="200" />
 </p>
 
-# Skelli (BETA)
-A simple tool for quickly creating files
+# Skelli CLI(BETA)
+A simple command line tool for quickly creating templated files
 
 ## Installation
 
